@@ -29,14 +29,69 @@
     </header>
     <!--HEADER-->
     <!--MAIN-->
-    <main class="main"></main>
+    <main class="main">
+      <!--SEARCH-->
+      <section class="search">
+        <!--SEARCH_HEADER-->
+        <header class="search_header">
+          <h1 class="search_header_title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="search_header_subtitle">
+            En plein centre-ville ou en pleine nature
+          </p>
+        </header>
 
-    <!--SEARCH-->
-    <section class="search">
-      <header class="search_header">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-      </header>
-    </section>
+        <form class="search_form" method="post" action="#">
+          <div class="search_form_icon">
+            <i
+              class="fa-solid fa-location-dot"
+              style="background-color: transparent"
+            ></i>
+          </div>
+          <input
+            class="search_form_input"
+            type="search"
+            placeholder="Marseillle, France"
+          />
+          <button class="search_form_button">
+            <p class="search_form_button_text">Rechercher</p>
+          </button>
+        </form>
+        <!--SEARCH_FILTERS-->
+        <div class="search_filters">
+          <p class="search_filters_title">Filtres</p>
+
+          <button class="search_filters_filter">
+            <i
+              class="fa-solid fa-money-bill-wave search_filters_filter_icon"
+            ></i>
+            <p class="search_filters_filter_title">Économique</p>
+          </button>
+          <button class="search_filters_filter">
+            <i class="fa-solid fa-person search_filters_filter_icon"></i>
+            <p class="search_filters_filter_title">Familial</p>
+          </button>
+          <button class="search_filters_filter">
+            <i class="fa-solid fa-heart search_filters_filter_icon"></i>
+            <p class="search_filters_filter_title">Romantique</p>
+          </button>
+          <button class="search_filters_filter">
+            <i class="fa-solid fa-dog search_filters_filter_icon"></i>
+            <p class="search_filters_filter_title">Animaux autorisés</p>
+          </button>
+        </div>
+        <div class="search_result">
+          <div class="search_result_box">
+            <div class="search_result_icon">
+              <i class="fa-solid fa-info search_result_icon_info"></i>
+            </div>
+            <p class="search_result_text">
+              Plus de 500 logements sont disponibles dans cette ville
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
