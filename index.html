@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!--METAS-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--===METAS===-->
+
+    <!--FONTS-->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
     </style>
@@ -11,19 +15,32 @@
       src="https://kit.fontawesome.com/4af81053be.js"
       crossorigin="anonymous"
     ></script>
+    <!--===FONTS===-->
+
+    <!--STYLE CSS-->
     <link rel="stylesheet" href="styles.css" />
+    <!--===STYLE CSS===-->
+
+    <!--TITLE-->
     <title>Booki - Trouvez vos vacances !</title>
+    <!--===TITLE===-->
   </head>
+
   <body>
     <!--HEADER-->
     <header class="header">
       <img src="assets/logo/Booki.png" alt="logo-booki" class="header_img" />
       <nav class="header_nav">
-        <a href="#hosting" class="header_nav_link">Hébergement</a>
-        <a href="#activity" class="header_nav_link">Activités</a>
+        <ul>
+          <li><a href="#hosting" class="header_nav_link">Hébergement</a></li>
+          <!--Doit renvoyer à la section "Hébergement à Marseille"-->
+          <li><a href="#activity" class="header_nav_link">Activités</a></li>
+          <!--Doit renvoyer à la section "Activités à Marseille"-->
+        </ul>
       </nav>
     </header>
-    <!--HEADER-->
+    <!--===HEADER===-->
+
     <!--MAIN-->
     <main class="main">
       <!--SEARCH-->
@@ -37,7 +54,7 @@
             En plein centre-ville ou en pleine nature
           </p>
         </header>
-
+        <!--===SEARCH_HEADER===-->
         <form class="search_form" method="post" action="#">
           <div class="search_form_icon">
             <i
@@ -77,6 +94,8 @@
             <p class="search_filters_filter_title">Animaux autorisés</p>
           </button>
         </div>
+        <!--===SEARCH_FILTERS===-->
+        <!--SEARCH_RESULT-->
         <div class="search_result">
           <div class="search_result_box">
             <div class="search_result_icon">
@@ -87,7 +106,131 @@
             </p>
           </div>
         </div>
+        <!--===SEARCH_RESULT===-->
       </section>
+      <!--===SEARCH===-->
+
+      <!--HOSTING-->
+     <section class="hosting_container">
+      <header class="hosting_header">
+        <h2 id="hosting">Hébergement à Marseille</h2>
+      </header>
+
+      <div class="hosting_bloc">
+        <a href="#">
+          <div class="card">
+
+            <img class="card_img" src="assets/hebergements/4_small/Auberge_La_Canebière.jpg" alt="Auberge La Canebière">
+            <div class="card_text">
+              <h3>Auberge La Canebière</h3>
+              <p>Nuit à partir de 25€</p>
+            </div>
+          </div class="hosting_review">
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_off"></i>
+          </div>
+        </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+
+            <img class="card_img" src="assets/hebergements/4_small/Hôtel_du_port.jpg" alt="Hôtel du port">
+            <div class="card_text">
+              <h3>Hôtel du port</h3>
+              <p>Nuit à partir de 52€</p>
+            </div>
+          </div class="hosting_review">
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_off"></i>
+          </div>
+        </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+
+            <img class="card_img" src="assets/hebergements/4_small/Hôtel_Les_mouettes.jpg" alt="Hôtel_Les_mouettes">
+            <div class="card_text">
+              <h3>Hôtel Les mouettes</h3>
+              <p>Nuit à partir de 76€</p>
+            </div>
+          </div class="hosting_review">
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_off"></i>
+          </div>
+        </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+
+            <img class="card_img" src="assets/hebergements/4_small/Hôtel_de_la_mer.jpg" alt="Hôtel_de_la_mer">
+            <div class="card_text">
+              <h3>Hôtel de la mer</h3>
+              <p>Nuit à partir de 46€</p>
+            </div>
+          </div class="hosting_review">
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_off"></i>
+          </div>
+        </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+
+            <img class="card_img" src="assets/hebergements/4_small/Auberge_Le_Panier.jpg" alt="Auberge_Le_Panier">
+            <div class="card_text">
+              <h3>Auberge Le Panier</h3>
+              <p>Nuit à partir de 23€</p>
+            </div>
+          </div class="hosting_review">
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_off"></i>
+          </div>
+        </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+
+            <img class="card_img" src="assets/hebergements/4_small/Hôtel_Chez_Amina.jpg" alt="Hôtel_Chez_Amina">
+            <div class="card_text">
+              <h3>Hôtel Chez Amina</h3>
+              <p>Nuit à partir de 96€</p>
+            </div>
+          </div class="hosting_review">
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_on"></i>
+          <i class="fa-solid fa-star hosting_card_star_off"></i>
+          </div>
+        </div>
+        </a>
+         <footer class="hosting_footer">
+                    <a class="hosting_footer_link" href="#">Afficher plus</a>
+                </footer>
+     </section>
+
+
     </main>
+    <!--===MAIN===-->
   </body>
 </html>
