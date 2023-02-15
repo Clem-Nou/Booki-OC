@@ -26,9 +26,9 @@ h1 {
   line-height: 26px;
 }
 h2 {
-  font-size: 0.9em;
-  font-weight: 400;
-  line-height: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
 }
 h3 {
   margin-left: 20px;
@@ -51,7 +51,7 @@ h4 {
   padding: 6px 10px 40px 10px;
 }
 /*Logo*/
-.header_img {
+.header-img {
   width: 61px;
 }
 /*Nav menu*/
@@ -75,7 +75,7 @@ nav li a {
   padding: 20px;
 }
 
-.header_nav_link {
+.header-nav-link {
   font-weight: 500;
   font-size: 16px;
 }
@@ -83,16 +83,16 @@ nav li a {
 
 /*------SEARCH------*/
 /*Search Header*/
-.search_header {
+.search-header {
   display: flex;
   flex-direction: column;
 }
 
-.search_header_subtitle {
+.search-header-subtitle {
   padding-bottom: 20px;
 }
 /*Search form*/
-.search_form {
+.search-form {
   display: inline-flex;
   width: 332px;
   height: 49px;
@@ -104,7 +104,7 @@ nav li a {
 .location {
   margin: 25px;
 }
-.search_form_input {
+.search-form-input {
   width: 332px;
   height: 49px;
   padding-left: 10px;
@@ -122,7 +122,7 @@ input::placeholder {
   font-size: 18px;
   font-weight: 700;
 }
-.search_form_button {
+.search-form-button {
   width: 132px;
   height: 49px;
   cursor: pointer;
@@ -134,7 +134,7 @@ input::placeholder {
   background-color: #0065fc;
   border-radius: 0px 15px 15px 0px;
 }
-.search_form_button_text {
+.search-form-button-text {
   color: white;
   font-weight: 700;
   font-size: 18px;
@@ -143,7 +143,7 @@ input::placeholder {
 
 /*------FILTER------*/
 /*filters box*/
-.search_filters {
+.search-filters {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -152,13 +152,13 @@ input::placeholder {
   width: 950px;
   height: 49px;
 }
-.search_filters_title {
+.search-filters-title {
   color: black;
   font-size: 18px;
   font-weight: 700;
 }
 /*filters items*/
-.search_filters_filter {
+.search-filters-filter {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -168,26 +168,26 @@ input::placeholder {
   border-radius: 25px;
   background-color: white;
 }
-.search_filters_filter:hover {
+.search-filters-filter:hover {
   background-color: #deebff;
 }
-.search_filters_filter_icon {
+.search-filters-filter-icon {
   padding-right: 10px;
   color: #0065fc;
   font-size: 17px;
 }
-.search_filters_filter_title {
+.search-filters-filter-title {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
 }
-.filters_description p {
+.filters-description p {
   display: inline;
   margin-left: 10px;
   line-height: 60px;
 }
-.filters_description .fa-info {
+.filters-description .fa-info {
   display: inline;
   color: #0065fc;
   border: solid 1px #f2f2f2;
@@ -199,7 +199,7 @@ input::placeholder {
 
 /*------CARDS BLOC CONTAINER------*/
 /* Contient Hosting et Popular */
-.card_bloc_container {
+.card-bloc-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -218,7 +218,7 @@ input::placeholder {
   height: fit-content;
 }
 /*all cards box*/
-.hosting_bloc {
+.hosting-bloc {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -227,7 +227,7 @@ input::placeholder {
   margin: 12px 6px 25px 6px;
 }
 /*card*/
-.hosting_card {
+.hosting-card {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -240,11 +240,11 @@ input::placeholder {
   padding: 6px;
   margin: 6px;
 }
-.hosting_card:hover {
+.hosting-card:hover {
   color: #0065fc;
   box-shadow: 5px 5px 5px #a09e9e, -5px 5px 5px #a09e9e;
 }
-.card_img {
+.card-img {
   height: 125px;
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -257,7 +257,7 @@ input::placeholder {
 .euros {
   font-weight: bold;
 }
-.hosting_info {
+.hosting-info {
   margin-top: none;
   padding-top: none;
   margin-left: 8px;
@@ -276,13 +276,13 @@ input::placeholder {
   color: #f2f2f2;
 }
 /*hosting footer*/
-.hosting_footer {
+.hosting-footer {
   font-weight: 700;
   font-size: 18px;
   color: black;
   padding-left: 15px;
 }
-.hosting_footer_link:hover {
+.hosting-footer-link:hover {
   color: #0065fc;
   text-decoration: underline;
 }
