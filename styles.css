@@ -199,7 +199,7 @@ input::placeholder {
 
 /*------CARDS BLOC CONTAINER------*/
 /* Contient Hosting et Popular */
-.card-bloc-container {
+.cards-bloc-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -213,8 +213,7 @@ input::placeholder {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 15px;
-  width: 880px;
-  height: 626px;
+  width: 66%;
   height: fit-content;
 }
 /*all cards box*/
@@ -231,8 +230,8 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 199px;
-  width: 248px;
+  height: 200px;
+  width: 230px;
   background-color: white;
   box-shadow: 5px 5px 5px #f2f2f2, -5px 5px 5px #e9e2e2;
   transition: 0.4s;
@@ -244,7 +243,7 @@ input::placeholder {
   color: #0065fc;
   box-shadow: 5px 5px 5px #a09e9e, -5px 5px 5px #a09e9e;
 }
-.card-img {
+.hosting-card-img {
   height: 125px;
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -287,3 +286,52 @@ input::placeholder {
   text-decoration: underline;
 }
 /*------HOSTING------*/
+
+/*------POPULAR------*/
+.popular {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 15px;
+  width: 25%;
+}
+.popular-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: baseline;
+  margin: 0 30px 0 15px;
+}
+.graph-icon {
+  color: #0065fc;
+  padding-top: 25px; /*refaire plus propre ??*/
+}
+.popular-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+.popular-card {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  background-color: white;
+  box-shadow: 0px 5px 5px #f2f2f2, -5px 5px 5px #e9e2e2;
+  transition: 0.4s;
+  border-radius: 20px;
+  padding: 6px;
+  margin: 6px;
+}
+.popular-card:hover {
+  color: #0065fc;
+  box-shadow: 5px 5px 5px #a09e9e, -5px 5px 5px #a09e9e;
+}
+.popular-card-img {
+  width: 125px;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+}
+.popular-desc {
+  margin-left: 15px;
+}
