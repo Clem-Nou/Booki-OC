@@ -75,29 +75,32 @@
         <!-- search filters -->
         <div class="search-filters">
           <h2 class="search-filters-title">Filtres</h2>
-
-          <button class="search-filters-filter">
-            <i
-              class="search-filters-filter-icon fa-solid fa-money-bill-wave"
-            ></i>
-            <p class="search-filters-filter-title">Économique</p>
-          </button>
-          <button class="search-filters-filter">
-            <i class="search-filters-filter-icon fa-solid fa-person"></i>
-            <p class="search-filters-filter-title">Familial</p>
-          </button>
-          <button class="search-filters-filter">
-            <i class="search-filters-filter-icon fa-solid fa-heart"></i>
-            <p class="search-filters-filter-title">Romantique</p>
-          </button>
-          <button class="search-filters-filter">
-            <i class="search-filters-filter-icon fa-solid fa-dog"></i>
-            <p class="search-filters-filter-title">Animaux autorisés</p>
-          </button>
+          <div class="search-filter-container">
+            <button class="search-filters-filter">
+              <i
+                class="search-filters-filter-icon fa-solid fa-money-bill-wave"
+              ></i>
+              <p class="search-filters-filter-title">Économique</p>
+            </button>
+            <button class="search-filters-filter">
+              <i class="search-filters-filter-icon fa-solid fa-person"></i>
+              <p class="search-filters-filter-title">Familial</p>
+            </button>
+            <button class="search-filters-filter">
+              <i class="search-filters-filter-icon fa-solid fa-heart"></i>
+              <p class="search-filters-filter-title">Romantique</p>
+            </button>
+            <button class="search-filters-filter">
+              <i class="search-filters-filter-icon fa-solid fa-dog"></i>
+              <p class="search-filters-filter-title">Animaux autorisés</p>
+            </button>
+          </div>
         </div>
         <!-- search result -->
         <div class="filters-description">
-          <i class="fa-solid fa-info"></i>
+          <div id="cercle-icon">
+            <i class="fa-solid fa-info"></i>
+          </div>
           <p class="info">
             Plus de 500 logements sont disponibles dans cette ville
           </p>
@@ -116,9 +119,10 @@
             <h3 id="hosting">Hébergement à Marseille</h3>
           </header>
           <!-- all cards box-->
+          <a href="#">
           <div class="hosting-bloc">
             <!-- card -->
-            <a href="#">
+            
               <div class="hosting-card card-hover">
                 <img
                   class="hosting-card-img"
@@ -260,7 +264,6 @@
                 </div>
               </div>
             </a>
-          </div>
           <!-- hosting footer -->
           <footer class="hosting-footer">
             <a href="#" class="hosting-footer-link"><p>Afficher plus</p></a>

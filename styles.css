@@ -1,14 +1,8 @@
-* {
-  font-family: 'Raleway', sans-serif;
-  max-width: 1400px;
-  scroll-behavior: smooth;
-}
 body {
-  margin: 0 30px;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
   max-width: 1400px;
-}
-.main {
-  padding: 0 10px 0 10px;
+  margin: auto;
 }
 
 /*------FONT------*/
@@ -19,7 +13,7 @@ a {
   font-size: 16px;
 }
 h1 {
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 700;
   line-height: 26px;
 }
@@ -50,7 +44,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 10px 40px 10px;
+  padding: 6px 10px 20px 37px;
 }
 /*Logo*/
 .header-img {
@@ -82,7 +76,9 @@ nav li a {
   font-size: 16px;
 }
 /*------HEADER------*/
-
+.main {
+  padding: 0px 35px 0px 35px;
+}
 /*------SEARCH------*/
 /*Search Header*/
 .search-header {
@@ -96,7 +92,7 @@ nav li a {
 /*Search form*/
 .search-form {
   display: inline-flex;
-  width: 332px;
+  width: 20%;
   height: 49px;
   align-items: center;
   border: 1px solid #f2f2f2;
@@ -147,12 +143,14 @@ input::placeholder {
 /*filters box*/
 .search-filters {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  width: 950px;
-  height: 49px;
+  align-items: baseline;
+  max-width: fit-content;
+}
+.search-filter-container {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 710px;
 }
 .search-filters-title {
   color: black;
@@ -162,13 +160,12 @@ input::placeholder {
 /*filters items*/
 .search-filters-filter {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 0px 20px;
+  align-items: baseline;
   border: 2px solid #f2f2f2;
   border-radius: 25px;
   background-color: white;
+  padding: 0% 2% 0% 2%;
+  margin-left: 2%;
 }
 .search-filters-filter:hover {
   background-color: #deebff;
@@ -184,18 +181,26 @@ input::placeholder {
   line-height: 20px;
   color: #000000;
 }
-.filters-description p {
-  display: inline;
-  margin-left: 10px;
-  line-height: 60px;
+.filters-description {
+  display: flex;
+  align-items: center;
 }
-.filters-description .fa-info {
-  display: inline;
+.fa-info {
   color: #0065fc;
-  border: solid 1px #f2f2f2;
-  padding: 5px 10px 5px 10px;
-  font-size: 16px;
-  border-radius: 50px;
+  font-size: 0.7em;
+}
+#cercle-icon {
+  border: 1px solid #deebff;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  font-size: 0.9em;
 }
 /*------FILTER------*/
 
@@ -203,6 +208,7 @@ input::placeholder {
 /* Contient Hosting et Popular */
 .cards-bloc-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 35px;
@@ -215,7 +221,7 @@ input::placeholder {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 15px;
-  width: 66%;
+  max-width: 66%;
   height: fit-content;
 }
 /*all cards box*/
@@ -229,9 +235,6 @@ input::placeholder {
 }
 /*card*/
 .hosting-card {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   height: 200px;
   width: 230px;
   background-color: white;
@@ -296,7 +299,6 @@ input::placeholder {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-content: baseline;
   margin: 0 30px 0 15px;
 }
 .graph-icon {
@@ -306,12 +308,14 @@ input::placeholder {
 .popular-bloc {
   display: flex;
   flex-direction: column;
+  height: 85%;
   justify-content: space-between;
+  margin: 12px 6px 25px 6px;
 }
 .popular-card {
   display: flex;
   flex-direction: row;
-  height: 120px;
+  height: 130px;
   background-color: white;
   box-shadow: 0px 5px 5px #f2f2f2, -5px 5px 5px #e9e2e2;
   transition: 0.4s;
@@ -384,22 +388,18 @@ input::placeholder {
   padding-top: 10px;
   width: 99%;
 }
-
 .footer-containers {
   display: flex;
   justify-content: space-around;
 }
-
 .footer-container {
   margin-right: 70px;
   padding: 20px 0px 5px 0px;
 }
-
 .footer-container-title {
   font-weight: 700;
   font-size: 18px;
 }
-
 .footer-container-list {
   list-style: none;
   font-weight: 400;
@@ -407,7 +407,42 @@ input::placeholder {
   line-height: 35px;
   padding-left: 20px;
 }
-
 .footer-container-list a:hover {
   text-decoration: underline;
+}
+
+/* Tablette */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* PAGE */
+  .cards-bloc-container {
+    flex-direction: column;
+  }
+  .search-filters-container {
+    width: 100%;
+  }
+  .search-filters-filter {
+    margin-left: 2%;
+  }
+  .popular {
+    max-width: 100%;
+    height: 230px;
+  }
+  .popular-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hosting {
+    max-width: 100%;
+  }
+  .activity-bloc {
+    width: 100%;
+  }
+  .activity-card {
+    height: 280px;
+  }
+  .activity-card-img {
+    height: 250px;
+  }
 }
