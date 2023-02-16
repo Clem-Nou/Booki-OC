@@ -6,8 +6,6 @@
 body {
   margin: 0 30px;
   max-width: 1400px;
-  height: 1500px; /* DISABLE THIS */
-  border: solid red; /* DISABLE THIS */
 }
 .main {
   padding: 0 10px 0 10px;
@@ -42,7 +40,11 @@ h4 {
   padding-top: none;
 }
 /*------FONT------*/
-
+/*------HOVER------*/
+.card-hover:hover {
+  color: #0065fc;
+  box-shadow: 5px 5px 5px #a09e9e, -5px 5px 5px #a09e9e;
+}
 /*------HEADER------*/
 .header {
   display: flex;
@@ -239,10 +241,6 @@ input::placeholder {
   padding: 6px;
   margin: 6px;
 }
-.hosting-card:hover {
-  color: #0065fc;
-  box-shadow: 5px 5px 5px #a09e9e, -5px 5px 5px #a09e9e;
-}
 .hosting-card-img {
   height: 125px;
   width: 100%;
@@ -309,7 +307,6 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 10px;
 }
 .popular-card {
   display: flex;
@@ -322,10 +319,6 @@ input::placeholder {
   padding: 6px;
   margin: 6px;
 }
-.popular-card:hover {
-  color: #0065fc;
-  box-shadow: 5px 5px 5px #a09e9e, -5px 5px 5px #a09e9e;
-}
 .popular-card-img {
   width: 125px;
   height: 100%;
@@ -334,4 +327,87 @@ input::placeholder {
 }
 .popular-desc {
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+/*------POPULAR------*/
+
+/*------ACTIVITY------*/
+.activity {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.activity-bloc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.activity a {
+  width: 23%;
+}
+.activity-card {
+  height: 445px;
+  margin-top: 15px;
+}
+.activity-card-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 20px;
+  box-shadow: 0px 5px 5px #f2f2f2, -5px 5px 5px #e9e2e2;
+  transition: 0.4s;
+}
+.activity-card-img {
+  width: 100%;
+  height: 380px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+.activity-card-title {
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+  font-size: 14px;
+}
+/*------ACTIVITY------*/
+
+/*------FOOTER------*/
+.footer {
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  padding-top: 10px;
+  width: 99%;
+}
+
+.footer-containers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-container {
+  margin-right: 70px;
+  padding: 20px 0px 5px 0px;
+}
+
+.footer-container-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-container-list {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  padding-left: 20px;
+}
+
+.footer-container-list a:hover {
+  text-decoration: underline;
 }
