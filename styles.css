@@ -31,7 +31,7 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-size: 1.375;
+  font-size: 1.375em;
   font-weight: 700;
   margin-left: 20px;
 }
@@ -126,10 +126,6 @@ input::placeholder {
   display: flex;
   align-items: baseline;
 }
-.search-filters-filter p {
-  font-size: 1.1em;
-  font-weight: 700;
-}
 .search-filter-container {
   display: flex;
   margin: 20px 0 20px 0;
@@ -142,8 +138,10 @@ input::placeholder {
   border: 2px solid #dae0e8;
   background-color: white;
   border-radius: 50px;
-  padding: 0% 2% 0% 2%;
+  padding: 1% 2% 1% 2%;
   margin-left: 2%;
+  font-size: 1.1em;
+  font-weight: 700;
 }
 .search-filters-filter:hover {
   background-color: #deebff;
@@ -290,7 +288,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding: 0 2px 15px 0;
 }
 .popular-card-img {
   padding: 4px 14px 4px 4px;
@@ -310,9 +308,6 @@ input::placeholder {
 /*------ACTIVITY------*/
 .activity {
   margin-top: 3%;
-}
-#activity {
-  font-size: 1.1em;
 }
 /*All cards box*/
 .activity-bloc {
