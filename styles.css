@@ -9,10 +9,14 @@ body {
 .main {
   padding: 0px 35px 0px 35px;
 }
-/*------HOVER------*/
+/*------HOVER & TITLE------*/
 .card-hover:hover {
   color: #0065fc;
   box-shadow: 5px 5px 5px #a09e9e, -5px 5px 5px #a09e9e;
+}
+.hosting-footer-link:hover {
+  color: #0065fc;
+  text-decoration: underline;
 }
 a {
   text-decoration: none;
@@ -200,7 +204,7 @@ input::placeholder {
   justify-content: space-between;
   padding: 1%;
 }
-/*Card*/
+/*Hosting Card*/
 .hosting-card {
   border-radius: 20px 20px 20px 20px;
   background-color: white;
@@ -216,9 +220,7 @@ input::placeholder {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-.hosting-info h4 {
-  margin: 3px 0 0 10px;
-}
+.hosting-info h4,
 .hosting-info p {
   margin: 3px 0 0 10px;
 }
@@ -241,10 +243,6 @@ input::placeholder {
   font-size: 0.9em;
   padding-left: 20px;
   margin-top: 70px;
-}
-.hosting-footer-link:hover {
-  color: #0065fc;
-  text-decoration: underline;
 }
 /*------HOSTING------*/
 
@@ -272,7 +270,7 @@ input::placeholder {
 .popular-bloc {
   margin: 2%;
 }
-/*Card*/
+/*Popular Card*/
 .popular-card {
   display: flex;
   flex-direction: row;
@@ -302,10 +300,10 @@ input::placeholder {
 .popular .review {
   margin: 0;
 }
-
 /*------POPULAR------*/
-
+/*------CARDS BLOC CONTAINER------*/
 /*------ACTIVITY------*/
+
 .activity {
   margin-top: 3%;
 }
@@ -350,15 +348,18 @@ input::placeholder {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* PAGE */
+  /*Cards-Bloc-Container contient Hosting + Popular */
   .cards-bloc-container {
     flex-direction: column;
   }
+  /*Search Filters*/
   .search-filter-container {
     width: 100%;
   }
   .search-filters-filter {
     margin-left: 2%;
   }
+  /*Hosting*/
   .hosting {
     max-width: 100%;
   }
@@ -367,6 +368,7 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-between;
   }
+  /*Popular*/
   .popular {
     max-width: 100%;
     height: 230px;
@@ -382,6 +384,7 @@ input::placeholder {
     max-width: 30%;
     min-width: 30%;
   }
+  /*Activity*/
   .activity-card {
     height: 267px;
     width: 23%;
@@ -395,6 +398,7 @@ input::placeholder {
   .main {
     padding: 0px 20px 0px 20px;
   }
+  /*Header*/
   .header {
     flex-direction: column;
     margin-top: 25px;
@@ -425,6 +429,7 @@ input::placeholder {
     color: #0065fc;
     border-top: none;
   }
+  /*Search*/
   .search-form {
     width: 100%;
     margin: 10px 0 10px 0;
@@ -461,9 +466,11 @@ input::placeholder {
     font-size: 0.8em;
     padding-left: 20px;
   }
+  /*Cards-Bloc-Container contient Hosting + Popular */
   .cards-bloc-container {
     flex-direction: column-reverse;
   }
+  /*Hosting*/
   .hosting {
     height: 1280px;
     background-color: white;
@@ -484,6 +491,7 @@ input::placeholder {
   .hosting-footer-link {
     display: none;
   }
+  /*Popular*/
   .popular {
     border-radius: 0px;
     height: 550px;
@@ -492,6 +500,7 @@ input::placeholder {
   .popular-card {
     max-width: 100%;
   }
+  /*Activity*/
   .activity {
     margin-top: 30px;
     height: 900px;
@@ -504,6 +513,7 @@ input::placeholder {
   .activity-card-img {
     height: 150px;
   }
+  /*Footer*/
   .footer {
     flex-direction: column;
     margin: 0px;
