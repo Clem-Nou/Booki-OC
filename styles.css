@@ -341,7 +341,7 @@ input::placeholder {
 
 /* Tablette */
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   /* PAGE */
   /*Cards-Bloc-Container contient Hosting + Popular */
   .cards-bloc-container {
@@ -389,9 +389,13 @@ input::placeholder {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main,
-  body {
+  body,
+  .popular,
+  .hosting,
+  .hosting-card,
+  .header {
     padding: 0px;
   }
   /*Header*/
@@ -399,7 +403,6 @@ input::placeholder {
     flex-direction: column;
     margin-top: 25px;
     height: 90px;
-    padding: 0;
   }
   .header-img {
     display: flex;
@@ -472,7 +475,6 @@ input::placeholder {
   .hosting {
     height: 1280px;
     background-color: white;
-    padding: 0px;
     max-width: 100%;
   }
   .hosting-bloc,
@@ -487,7 +489,6 @@ input::placeholder {
   .hosting-card {
     width: 100%;
     height: 180px;
-    padding: 0;
     margin: 0 0 15px 0;
   }
   .hosting-footer-link {
@@ -498,7 +499,6 @@ input::placeholder {
     border-radius: 0px;
     height: fit-content;
     max-width: 100%;
-    padding: 0;
   }
   .popular-card {
     max-width: 100%;
