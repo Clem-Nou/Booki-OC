@@ -272,8 +272,7 @@ input::placeholder {
   flex-direction: row;
   height: 140px;
   background-color: white;
-  box-shadow: 0px 5px 5px #f2f2f2, -5px 5px 5px #e9e2e2;
-  transition: 0.4s;
+  box-shadow: 5px 5px 5px #dcdcdc;
   border-radius: 20px;
   min-width: 270px;
   margin-bottom: 5%;
@@ -324,7 +323,7 @@ input::placeholder {
   object-fit: cover;
 }
 .activity-card h4 {
-  margin: 5px 0 0 15px;
+  margin: 5px 0 0 10px;
 }
 /*------ACTIVITY------*/
 
@@ -342,7 +341,7 @@ input::placeholder {
 
 /* Tablette */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   /* PAGE */
   /*Cards-Bloc-Container contient Hosting + Popular */
   .cards-bloc-container {
@@ -391,8 +390,9 @@ input::placeholder {
 }
 
 @media screen and (max-width: 768px) {
-  .main {
-    padding: 0px 20px 0px 20px;
+  .main,
+  body {
+    padding: 0px;
   }
   /*Header*/
   .header {
@@ -406,7 +406,6 @@ input::placeholder {
     justify-content: center;
   }
   .header-nav {
-    display: flex;
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
@@ -426,6 +425,9 @@ input::placeholder {
     border-top: none;
   }
   /*Search*/
+  .search {
+    padding: 0 15px 0 15px;
+  }
   .search-form {
     width: 100%;
     margin: 10px 0 10px 0;
@@ -478,11 +480,15 @@ input::placeholder {
   .activity-bloc {
     flex-direction: column;
     justify-content: center;
+    padding: 0 15px 0 15px;
+    margin: 0;
+    max-width: 768px;
   }
   .hosting-card {
     width: 100%;
     height: 180px;
-    margin-bottom: 15px;
+    padding: 0;
+    margin: 0 0 15px 0;
   }
   .hosting-footer-link {
     display: none;
@@ -490,21 +496,21 @@ input::placeholder {
   /*Popular*/
   .popular {
     border-radius: 0px;
-    height: 550px;
+    height: fit-content;
     max-width: 100%;
+    padding: 0;
   }
   .popular-card {
     max-width: 100%;
   }
   /*Activity*/
   .activity {
-    margin-top: 30px;
-    height: 900px;
+    height: fit-content;
   }
   .activity-card {
     width: 100%;
     height: 190px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
   }
   .activity-card-img {
     height: 150px;
